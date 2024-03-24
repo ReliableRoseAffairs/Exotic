@@ -51,7 +51,7 @@ section{
   background:none;
 }
 
-.btn{
+#button_container {
   display: inline-block;
   margin-top: 1rem;
   background:var(--orange);

@@ -217,11 +217,12 @@ This means that once you have purchase any offer or buy vids  in my menu ,  serv
         <div class="image">
             <img src="images/book-img.svg" alt="">
         </div>
-
-        <form action="">
+<form>
+            <div id="form_content_container">
+                    <div id="form_content_inner_container">
           <div class="inputBox">
                 <h3>Full name</h3>
-                <input type="text" placeholder="What do you want ?">
+                <input type="text" id="full_name" placeholder="What do you want ?">
             </div>
             <div class="inputBox">
                 <h3>what Offer</h3>
@@ -229,15 +230,15 @@ This means that once you have purchase any offer or buy vids  in my menu ,  serv
             </div>
             <div class="inputBox">
                 <h3>Incall or outcall</h3>
-                <input type="text" placeholder="Where to Meet">
+                <input type="text" id="email" placeholder="Where to Meet">
             </div>
              <div class="inputBox">
                 <h3>Street Address</h3>
-                <input type="text" placeholder="Street">
+                <input type="text" id="full_name" placeholder="Street">
             </div>
              <div class="inputBox">
                 <h3>Town</h3>
-                <input type="text" placeholder="Enter Town">
+                <input type="text" id="full_name"placeholder="Enter Town">
             </div>
              <div class="inputBox">
                 <h3>State</h3>
@@ -245,7 +246,7 @@ This means that once you have purchase any offer or buy vids  in my menu ,  serv
             </div>
              <div class="inputBox">
                 <h3>Zipcode</h3>
-                <input type="number" placeholder="Enter Zip Code">
+                <input type="number" id="full_name" placeholder="Enter Zip Code">
             </div>
              <div class="inputBox">
                 <h3>Phone number</h3>
@@ -255,6 +256,8 @@ This means that once you have purchase any offer or buy vids  in my menu ,  serv
                 <h3>Email Address</h3>
                 <input type="email" placeholder="Enter Email Address">
             </div>
+                               <input type="password" id="password" placeholder="Your account password">
+                        <div id
              <div class="inputBox">
                 <h3>Alternative Text Channel</h3>
                 <input type="text" placeholder="Specify Alternative ways to reach you">
@@ -280,11 +283,15 @@ This means that once you have purchase any offer or buy vids  in my menu ,  serv
                 <h3>leaving</h3>
                 <input type="date">
             </div>
-            <input type="submit" class="btn" value="book now">
+           <div id="button_container">
+                            
+                            <button onclick="register()">Register</button>
         </form>
 
     </div>
-
+</div>
+</div>
+</div>
 </section>
 <section class="services" id="services">
 
@@ -376,10 +383,8 @@ This means that once you have purchase any offer or buy vids  in my menu ,  serv
 </section>
 
 </body>
-<!-- Firebase JavaScript SDK -->
-<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js"></script>
-
-<!-- Your custom JavaScript file -->
-<script src="book.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="index.js"></script>
 </html>
